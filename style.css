@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* utility classes */
+
+.flex-row{
+    display:flex;
+    gap:10px;
+    justify-content: center;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* styles */
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #33ccff 0%, #ffffff 100%);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todo-list{
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 100px;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.book_img{
+    width:50px;
+    height: 50px;
+}
+
+.head{
+    margin: 20px;
+}
+
+.title{
+    padding-top: 10px;
+}
+
+.input_section{
+    justify-content: space-between;
+    background-color: #edeef0;
+    border-radius:20px;
+}
+
+.input_section input{
+    background-color:transparent;
+    border: none;
+    outline: none;
+    padding-left: 30px  
+}
+
+.input_section button{
+    background-color: #ff5945;
+    border: none;
+    outline: none;
+    padding:10px 50px;
+    font-size: 16px;
+    border-radius: 40px;
+    cursor:pointer;
+   
+}
+.tasks{
+    margin-top:10px;
+}
+.task_list li{
+    list-style: none;
+    padding: 10px 8px 12px 50px;
+    user-select: none;
+    font-size: 1rem;
+    position: relative;
+}
+
+.task_list li::before{
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://www.citypng.com/public/uploads/preview/download-white-circle-png-31629716484axd08oupl9.png");
+    top:8px;
+    left: 8px;
+}
+
+.checked{
+    color: #555;
+    text-decoration: line-through;
+    
+}
+
+.task_list li.checked::before{
+    content: "";
+    background-image: url("https://p7.hiclipart.com/preview/570/728/13/check-mark-symbol-computer-icons-clip-art-orange-tree.jpg");
+}
+
+span{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+span:hover{
+    background-color: #edeef0;
+}
+
